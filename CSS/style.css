@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+    color: wheat;
+    font-family: Nunito;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../Fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: blueviolet;
+}
+
+.card {
+    display: table-cells;
+    text-align: center;
+    position: relative;
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow:  0rem 0.7rem 1.5rem 0.2rem rgb(61, 61, 61);
+    transition: all 300ms ease;
+    background: #292929;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+p {
+    font-weight: 600;
+    position: relative;
+}
+
+.cards {
+    color: blue;
+    gap: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cards .card img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10%;
+}

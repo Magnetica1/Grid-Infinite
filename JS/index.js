@@ -1,13 +1,18 @@
-    for (let index = 0; index < 1000; index++){
-        //Get the card
-        var card = document.querySelector("#card-1");
-        //Create the copy of card
-        const clone = card.cloneNode(true)    
-        //Add it to the DOM 
-        card.after(clone);
+    function scrollDuplicate() {
+        for (let index = 0; index < 1000; index++){
+            //Get the card
+            var card = document.querySelector("#card-1");
+            //Create the copy of card
+            const clone = card.cloneNode(true)    
+            //Add it to the DOM 
+            card.after(clone);
+        }
     }
 
-yScroll = Window.scrollY;
+    scrollDuplicate()
 
+const scroller = document.querySelector("#scroller");
 
-console.log(yScroll)
+scroller.addEventListener("scroll", (event) => {
+  console.log(scroller.scrollTop);
+});

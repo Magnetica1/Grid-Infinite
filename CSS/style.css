@@ -57,19 +57,3 @@ p {
     height: 5rem;
     border-radius: 10%;
 }
-
-#scroller {
-  overflow: scroll;
-  height: 100%;
-  width: 100%;
-  border: 5px dashed orange;
-}
-
-#scroller p {
-    top: 10rem;
-}
-
-#output {
-  padding: 1rem 0;
-}
-
